@@ -37,10 +37,10 @@ object MySparkApp {
 
     // Set the system properties so that Twitter4j library used by twitter stream
     // can use them to generat OAuth credentials
-    System.setProperty("twitter4j.oauth.consumerKey", 	"nzqklPC0Dt6Kd9ma59jGsnqL8")
-    System.setProperty("twitter4j.oauth.consumerSecret", "eXU6SbaJpx7LXsJxzl7OZEoDxfd2EvNwtQ9XUpL71eIAnJx4PU")
-    System.setProperty("twitter4j.oauth.accessToken", "	4807270241-z32Nst6CkC5875C8Osa4YZ1tgL3sp4mWIUNJEyf")
-    System.setProperty("twitter4j.oauth.accessTokenSecret", "hiA2zDxAytMvPFHanedocVmWrN7WfRNxUbvpA3tTe9pVV")
+    System.setProperty("twitter4j.oauth.consumerKey", consumerKey)
+    System.setProperty("twitter4j.oauth.consumerSecret", consumerSecret)
+    System.setProperty("twitter4j.oauth.accessToken", accessToken)
+    System.setProperty("twitter4j.oauth.accessTokenSecret", accessTokenSecret)
 
     // Set the Spark StreamingContext to create a DStream for every 5 seconds
     val ssc = new StreamingContext(sc, Seconds(5))
